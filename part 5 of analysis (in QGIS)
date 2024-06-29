@@ -1,0 +1,20 @@
+@author: bern
+part 5 of analysis
+ensure that the urban extent intersects with the significantly exposed areas (from part 4)
+** this is not a python code - do this part in QGIS.
+
+urban extents being: 
+    2018 urban SLEUTH layer
+    2018-2030 difference
+    2030 urban SLEUTH layer 
+
+actually having difficulty doing this matching in python... so manually doing this in QGIS using QGIS raster calculator.
+note to reproject the urban extent layer to EPSG 4326
+
+here is the formula:
+("reprojected_2018_urban@1"=1)*("2020_above50_damage_RP1@1")+("reprojected_2018_urban@1"!=1)*0
+^ if urban layer pixel value = 1, take the corresponding pixel damage value. 
+if the pixel value is not 1, then ignore the corresponding pixel. 
+
+for 2018-2030 urban extent (based on differing pixels)
+("reprojected_2018_2030_urban@1"=1)*("2030_above50_damage_RP1@1")+("reprojected_2018_2030_urban@1"!=1)*0
