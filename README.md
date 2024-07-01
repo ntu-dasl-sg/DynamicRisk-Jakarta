@@ -16,3 +16,6 @@ This risk analysis framework is done step by step. More detailed instructions ar
 5. part 5 of analysis (not a Python code, done in QGIS)
 6. assign_bc_to_urban_extent.py (assigns present day building count)
 7. assign_bc_2018_2030.py (assigns values to future urban extent rasters)
+
+Others: 
+1. Converting coordinates from Google Open Buildings (in csv) to a building count raster
