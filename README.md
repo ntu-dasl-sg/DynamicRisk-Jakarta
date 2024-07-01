@@ -28,6 +28,7 @@ This risk analysis framework is done step by step. More detailed instructions ar
 7. assign_bc_2018_2030.py (assigns values to future urban extent rasters)
       Input: Building count raster (assign values) 
       Output: Building count folder
+   
 *Change the file and folder paths accordingly!
 
 
